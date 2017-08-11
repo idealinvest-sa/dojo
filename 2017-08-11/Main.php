@@ -2,29 +2,21 @@
 
 class Main {
 
-	public function parse($number) {
+   public function parse($number) {
 
-	$numbers = array ("
+      $numbers = array ("
 
    |
    |
 
 " => 1
-	);
+      );
 
-	if (array_key_exists($number, $numbers)) {
-	   return $numbers[$number];	
-	}
-
+      if (array_key_exists($number, $numbers)) {
+         return $numbers[$number];	
+      }
 			
-		return 0;
-	}
+      return 0;
+   }
 
-	public function sendNumber(){
-		return array( 1 => '
-  |
-  |
-	
-');
-	}
 }

@@ -4,25 +4,25 @@ require 'Main.php';
 
 class MainTest extends TestCase
 {
-	public function dataProvider() {
+   public function dataProvider() {
 		
-		return array(
-		array("
+      return array(
+         array("
 
    |
    |
 
 ",1)
-		);
-	}
+      );
+   }
 
-	/**
-	 * @dataProvider dataProvider
-	 */
-	public function testParse($input, $expected) {
-		$main = new Main();
-		$actual = $main->parse($input);
-
-		$this->assertEquals($expected, $actual);
-	}
+   /**
+    * @dataProvider dataProvider
+    */
+   public function testParse($input, $expected) {
+      $main = new Main();
+      $actual = $main->parse($input);
+      
+      $this->assertEquals($expected, $actual);
+   }
 }
